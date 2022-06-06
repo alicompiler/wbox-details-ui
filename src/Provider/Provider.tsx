@@ -24,7 +24,7 @@ export function Provider(props: PropsWithChildren<ProviderProps>) {
     const initialState = useMemo(() => buildInitialState({}), []);
     return (
         <CoreProvider reducers={allReducers} createServiceFactory={createServiceFactory} initialState={initialState}>
-            <Wrapper fetcherType={fetcherType} fields={fields} fetchOptions={fetchOptions}>
+            <Wrapper fetcherType={fetcherType} fields={fields}>
                 {children}
             </Wrapper>
         </CoreProvider>

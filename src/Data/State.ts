@@ -1,8 +1,10 @@
 import {Field} from "../Field/Field";
 import {Group} from "../Group/Group";
 
+export type DetailsData = { [key: string]: unknown }
+
 export interface State {
-    data: unknown;
+    data: DetailsData | null;
     loading: boolean;
     error: unknown;
     fields: Field[];
