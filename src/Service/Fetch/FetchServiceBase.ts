@@ -1,6 +1,7 @@
 import {DispatchFunction} from 'wbox-context/dist/Context/DispatchContext';
 import {FetchActions} from '../../Data/Fetch/FetchAction';
 import {FetchService} from './FetchService';
+import {DetailsData} from "../../Data/State";
 
 export abstract class FetchServiceBase implements FetchService {
     private readonly dispatch: DispatchFunction;
@@ -12,7 +13,7 @@ export abstract class FetchServiceBase implements FetchService {
     }
 
     async fetch(): Promise<void> {
-        this.dispatch(FetchActions.setData([]));
+        this.dispatch(FetchActions.setData({}));
         await this.handleFetch(() => this.fetchData());
     }
 
@@ -25,7 +26,7 @@ export abstract class FetchServiceBase implements FetchService {
             if (this.shouldCancel) {
                 return;
             }
-            this.dispatch(FetchActions.setData(data));
+            this.dispatch(FetchActions.setData(data as DetailsData));
             this.dispatch(FetchActions.setLoading(false));
             this.dispatch(FetchActions.setError(null));
             onDone?.();

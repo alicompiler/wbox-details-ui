@@ -1,6 +1,6 @@
 import { Reducer } from 'wbox-context';
 import { FetchAction, FetchActionType } from './FetchAction';
-import { State } from '../State';
+import {DetailsData, State} from '../State';
 
 export const fetchReducer: Reducer<State, FetchAction<unknown>> = (state, action) => {
     switch (action.type) {
@@ -9,7 +9,7 @@ export const fetchReducer: Reducer<State, FetchAction<unknown>> = (state, action
         case FetchActionType.SET_ERROR:
             return { ...state, error: action.payload };
         case FetchActionType.SET_DATA:
-            return { ...state, allItems: action.payload as unknown[] };
+            return { ...state, allItems: action.payload as DetailsData };
         default:
             return state;
     }

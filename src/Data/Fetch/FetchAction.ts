@@ -1,4 +1,5 @@
-import { Action } from 'wbox-context';
+import {Action} from 'wbox-context';
+import {DetailsData} from "../State";
 
 export enum FetchActionType {
     SET_LOADING = 'FETCH_ACTION@SET_START',
@@ -16,7 +17,7 @@ export class FetchActions {
         };
     }
 
-    public static setData(data: unknown): FetchAction<unknown> {
+    public static setData(data: DetailsData): FetchAction<unknown> {
         return {
             type: FetchActionType.SET_DATA,
             payload: data,

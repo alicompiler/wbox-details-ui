@@ -9,10 +9,20 @@ import {Field} from "../Field/Field";
 export function Details() {
     const state = useState<State>();
     const defaults = useDefaults();
-    if (state.loading) return defaults.renderLoading();
-    if (state.error) return defaults.renderError();
+    if (state.loading) {
+        return defaults.renderLoading();
+    }
+    if (state.error) {
+        return defaults.renderError();
+    }
+    if (state.data === null) {
+        return null;
+    }
     const data = state.data as { [key: string]: string };
-    const groups = state.groups ?? [defaultGroup];
+    const groups = state.groups ?? [];
+    if (groups.length === 0) {
+        groups.push(defaultGroup);
+    }
     const {fields} = state;
 
     return <div className="__wbox_details_wrapper">
@@ -24,7 +34,7 @@ export function Details() {
                     .filter(f => f !== undefined)
                     .map(f => f as Field);
                 const GroupComponent = group.component ?? defaults.groupComponent;
-                return <GroupComponent key={group.name} group={group} fields={groupFields} data={data} />;
+                return <GroupComponent key={group.name} group={group} fields={groupFields} data={data}/>;
             })
         }
     </div>

@@ -1,4 +1,4 @@
-import {State} from "./Data/State";
+import {State,DetailsData} from "./Data/State";
 import {fetchReducer} from "./Data/Fetch/FetchReducer";
 import {FetchActions, FetchAction, FetchActionType} from "./Data/Fetch/FetchAction";
 import {SetupAction, SetupActions, SetupActionType} from "./Data/Setup/SetupAction";
@@ -11,6 +11,8 @@ import {ServiceFactory, DefaultServiceFactory} from "./Service/ServiceFactory";
 import {BasicFetchService, BasicFetchOptions} from "./Service/Fetch/BasicFetchService";
 import {HttpFetchService, HttpFetchOptions} from "./Service/Fetch/HttpFetchService";
 import {FetchOptions} from "./Service/Fetch/Types";
+import {Details} from "./Provider/Details";
+import {GroupComponentProps} from "./Provider/GroupComponentProps";
 
 export type {
     State,
@@ -25,10 +27,13 @@ export type {
     ServiceFactory,
     BasicFetchOptions,
     HttpFetchOptions,
-    FetchOptions
+    FetchOptions,
+    DetailsData,
+    GroupComponentProps
 }
 
 export {
+    Details,
     FetchActions,
     fetchReducer,
     SetupActions,

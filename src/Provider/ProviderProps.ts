@@ -6,6 +6,7 @@ import {BasicFetchOptions} from "../Service/Fetch/BasicFetchService";
 import {HttpFetchOptions} from "../Service/Fetch/HttpFetchService";
 import {Field} from "../Field/Field";
 import {Group} from "../Group/Group";
+import React from "react";
 
 export interface ProviderProps {
 
@@ -14,4 +15,5 @@ export interface ProviderProps {
     fetchOptions: BasicFetchOptions | HttpFetchOptions;
     fields: Field[];
     groups?: Group[];
+    detailsWrapperComponent?: React.ComponentType;
 }

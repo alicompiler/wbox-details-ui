@@ -13,7 +13,7 @@ export interface Defaults {
     groupComponent: React.ComponentType<GroupComponentProps>
     detailsWrapperComponent: React.ComponentType;
     renderLoading: () => ReactNode;
-    renderError: () => ReactNode;
+    renderError: () => any;
 }
 
 export const defaults: Defaults = {
