@@ -9,7 +9,7 @@ export const setupReducer: Reducer<State, SetupAction<unknown>> = (state, action
         case SetupActionType.SET_FIELDS:
             return {...state, fields: action.payload as Field[]};
         case SetupActionType.SET_GROUPS:
-            return {...state, groups: action.payload as Group[] | undefined};
+            return {...state, groups: action.payload as Group[]};
         default:
             return state;
     }

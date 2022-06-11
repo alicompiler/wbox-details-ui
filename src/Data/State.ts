@@ -9,14 +9,14 @@ export interface State {
     loading: boolean;
     error: unknown;
     fields: Field[];
-    groups?: Group[];
+    groups: Group[];
 }
 
 export const INITIAL_STATE: State = {
     fields: [],
     loading: false,
     error: undefined,
-    groups: undefined,
+    groups: [],
     data: null
 };
 

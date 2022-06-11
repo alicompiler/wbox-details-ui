@@ -10,7 +10,7 @@ app.use(express.json())
 
 
 
-app.get('/collection', (req, res) => {
+app.get('/data', (req, res) => {
     setTimeout(() => {
         if(req.query.error){
             res.status(400);

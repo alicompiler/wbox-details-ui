@@ -9,7 +9,7 @@ export const fetchReducer: Reducer<State, FetchAction<unknown>> = (state, action
         case FetchActionType.SET_ERROR:
             return { ...state, error: action.payload };
         case FetchActionType.SET_DATA:
-            return { ...state, allItems: action.payload as DetailsData };
+            return { ...state, data: action.payload as DetailsData };
         default:
             return state;
     }

@@ -12,7 +12,7 @@ type FetcherType = 'http' | 'direct';
 interface Props {
     fetcherType: FetcherType;
     fields: Field[];
-    groups?: Group[];
+    groups: Group[];
 }
 
 export function Wrapper(props: Props) {
@@ -31,7 +31,7 @@ export function Wrapper(props: Props) {
         const service: FetchService =
             fetcherType === 'http' ? serviceFactory.createHttpFetchService() : serviceFactory.createBasicFetchService();
         service.fetch();
-    }, [fetcherType, serviceFactory]);
+    }, []);
 
     return <DetailsComponent />;
 }

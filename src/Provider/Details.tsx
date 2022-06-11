@@ -1,7 +1,6 @@
 import React from "react";
 import {useState} from "wbox-context";
 import {State} from "../Data/State";
-import {defaultGroup} from "../Group/Group";
 // eslint-disable-next-line import/no-cycle
 import {useDefaults} from "../Defaults/DefaultsContext";
 import {Field} from "../Field/Field";
@@ -19,11 +18,7 @@ export function Details() {
         return null;
     }
     const data = state.data as { [key: string]: string };
-    const groups = state.groups ?? [];
-    if (groups.length === 0) {
-        groups.push(defaultGroup);
-    }
-    const {fields} = state;
+    const {groups,fields} = state;
 
     return <div className="__wbox_details_wrapper">
         {
