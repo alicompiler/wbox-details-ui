@@ -1,4 +1,4 @@
-import React, {PropsWithChildren, useCallback, useMemo} from 'react';
+import React, {useCallback, useMemo} from 'react';
 import {CoreProvider, DispatchFunction} from 'wbox-context';
 import {DefaultServiceFactory} from '../Service/ServiceFactory';
 import {buildInitialState, State} from "../Data/State";
@@ -10,8 +10,8 @@ import {setupReducer} from "../Data/Setup/SetupReducer";
 
 const baseReducers: any = [fetchReducer,setupReducer];
 
-export function Provider(props: PropsWithChildren<ProviderProps>) {
-    const {fetchOptions, reducers, serviceFactory, fields, children} = props;
+export function Provider(props: ProviderProps) {
+    const {fetchOptions, reducers, serviceFactory, fields} = props;
     const fetcherType = fetchOptions.data !== undefined ? 'direct' : 'http';
     const allReducers = useMemo(() => baseReducers.concat(reducers ?? []), [reducers]);
     const defaults = useDefaults();
@@ -24,9 +24,7 @@ export function Provider(props: PropsWithChildren<ProviderProps>) {
     const initialState = useMemo(() => buildInitialState({}), []);
     return (
         <CoreProvider reducers={allReducers} createServiceFactory={createServiceFactory} initialState={initialState}>
-            <Wrapper fetcherType={fetcherType} fields={fields}>
-                {children}
-            </Wrapper>
+            <Wrapper fetcherType={fetcherType} fields={fields} />
         </CoreProvider>
     );
 }

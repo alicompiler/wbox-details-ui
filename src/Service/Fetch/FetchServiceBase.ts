@@ -46,8 +46,3 @@ export abstract class FetchServiceBase implements FetchService {
 
     protected abstract fetchData(): Promise<unknown>;
 }
-
-export interface DataResult {
-    totalCount: number;
-    items: unknown[];
-}

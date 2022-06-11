@@ -1,7 +1,7 @@
 import {DispatchFunction} from 'wbox-context';
 import {State} from '../../Data/State';
 import {Defaults} from '../../Defaults/DefaultsContext';
-import {FetchServiceBase, DataResult} from './FetchServiceBase';
+import {FetchServiceBase} from './FetchServiceBase';
 
 export class HttpFetchService extends FetchServiceBase {
     private readonly options: HttpFetchOptions;
@@ -51,6 +51,6 @@ export interface HttpFetchOptions {
     headers?: HeadersInit;
     fetchOptions?: RequestInit;
     parseResponse?: (response: Response) => Promise<unknown>;
-    fetch?: () => Promise<DataResult>;
+    fetch?: () => Promise<unknown>;
     data?: never;
 }

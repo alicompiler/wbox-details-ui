@@ -8,7 +8,7 @@ import {Field} from "../Field/Field";
 import {Group} from "../Group/Group";
 
 export interface ProviderProps {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     reducers?: Reducer<State, Action<any, any>>[];
     serviceFactory?: (dispatch: DispatchFunction, state: State) => ServiceFactory;
     fetchOptions: BasicFetchOptions | HttpFetchOptions;
