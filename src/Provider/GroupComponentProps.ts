@@ -8,4 +8,5 @@ export interface GroupComponentProps {
     group: Group;
     fields: Field[];
     data: DetailsData;
+    renderOptions?: unknown;
 }

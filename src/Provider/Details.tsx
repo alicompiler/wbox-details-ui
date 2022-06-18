@@ -5,7 +5,8 @@ import {State} from "../Data/State";
 import {useDefaults} from "../Defaults/DefaultsContext";
 import {Field} from "../Field/Field";
 
-export function Details() {
+export function Details(props: { renderOptions?: unknown }) {
+    const {renderOptions} = props;
     const state = useState<State>();
     const defaults = useDefaults();
     if (state.loading) {
@@ -18,7 +19,7 @@ export function Details() {
         return null;
     }
     const data = state.data as { [key: string]: string };
-    const {groups,fields} = state;
+    const {groups, fields} = state;
 
     return <div className="__wbox_details_wrapper">
         {
@@ -29,7 +30,11 @@ export function Details() {
                     .filter(f => f !== undefined)
                     .map(f => f as Field);
                 const GroupComponent = group.component ?? defaults.groupComponent;
-                return <GroupComponent key={group.name} group={group} fields={groupFields} data={data}/>;
+                return <GroupComponent key={group.name}
+                                       renderOptions={renderOptions}
+                                       group={group}
+                                       fields={groupFields}
+                                       data={data}/>;
             })
         }
     </div>
