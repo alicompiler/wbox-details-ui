@@ -13,10 +13,11 @@ interface Props {
     fetcherType: FetcherType;
     fields: Field[];
     groups: Group[];
+    renderOptions?: unknown;
 }
 
 export function Wrapper(props: Props) {
-    const {fetcherType, fields, groups} = props;
+    const {fetcherType, fields, groups, renderOptions} = props;
     const dispatch = useDispatch();
     const serviceFactory: ServiceFactory = useServiceFactory();
     const defaults = useDefaults();
@@ -33,5 +34,5 @@ export function Wrapper(props: Props) {
         service.fetch();
     }, []);
 
-    return <DetailsComponent />;
+    return <DetailsComponent renderOptions={renderOptions} />;
 }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03b874b8-2e36-459a-849a-a69b1886c4cf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Defaults/DefaultsContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Defaults/DefaultsContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Provider/Provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/Provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Provider/ProviderProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/ProviderProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Provider/Wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/Wrapper.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ali/Desktop/me/WebBox/frontend/libs/wbox-details-ui&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/ali/Desktop/me/WebBox/frontend/libs/wbox-details-ui/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/ali/Desktop/me/WebBox/frontend/libs/wbox-details-ui/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/ali/Desktop/me/WebBox/frontend/libs/wbox-details-ui",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/ali/Desktop/me/WebBox/frontend/libs/wbox-details-ui/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/ali/Desktop/WebBox/libs/wbox-details-ui/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -70,6 +74,7 @@
       <workItem from="1654361320847" duration="21195000" />
       <workItem from="1654947103876" duration="8798000" />
       <workItem from="1654974131362" duration="8624000" />
+      <workItem from="1655578579201" duration="1623000" />
     </task>
     <servers />
   </component>

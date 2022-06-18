@@ -9,11 +9,11 @@ import {Group} from "../Group/Group";
 import React from "react";
 
 export interface ProviderProps {
-
     reducers?: Reducer<State, Action<any, any>>[];
     serviceFactory?: (dispatch: DispatchFunction, state: State) => ServiceFactory;
     fetchOptions: BasicFetchOptions | HttpFetchOptions;
     fields: Field[];
     groups?: Group[];
     detailsWrapperComponent?: React.ComponentType;
+    renderOptions?: unknown;
 }

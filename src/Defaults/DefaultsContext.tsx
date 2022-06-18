@@ -11,7 +11,7 @@ export interface Defaults {
         requestOptions: Partial<RequestInit>;
     };
     groupComponent: React.ComponentType<GroupComponentProps>
-    detailsWrapperComponent: React.ComponentType;
+    detailsWrapperComponent: React.ComponentType<{renderOptions?: unknown}>;
     renderLoading: () => ReactNode;
     renderError: () => any;
 }

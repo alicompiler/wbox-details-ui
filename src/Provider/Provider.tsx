@@ -12,7 +12,7 @@ import {defaultGroup} from "../Group/Group";
 const baseReducers: any = [fetchReducer,setupReducer];
 
 export function Provider(props: ProviderProps) {
-    const {fetchOptions, reducers, serviceFactory, fields, groups} = props;
+    const {fetchOptions, reducers, serviceFactory, fields, groups, renderOptions} = props;
     const fetcherType = fetchOptions.data !== undefined ? 'direct' : 'http';
     const allReducers = useMemo(() => baseReducers.concat(reducers ?? []), [reducers]);
     const defaults = useDefaults();
@@ -25,7 +25,7 @@ export function Provider(props: ProviderProps) {
     const initialState = useMemo(() => buildInitialState({}), []);
     return (
         <CoreProvider reducers={allReducers} createServiceFactory={createServiceFactory} initialState={initialState}>
-            <Wrapper fetcherType={fetcherType} fields={fields} groups={groups ?? [defaultGroup]} />
+            <Wrapper renderOptions={renderOptions} fetcherType={fetcherType} fields={fields} groups={groups ?? [defaultGroup]} />
         </CoreProvider>
     );
 }
