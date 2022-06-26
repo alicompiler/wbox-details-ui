@@ -20,10 +20,14 @@ export function Details() {
     const data = state.data as { [key: string]: string };
     const {groups, fields} = state;
 
+    const keys = Object.keys(data);
     return <div className="__wbox_details_wrapper">
         {
             groups.map(group => {
-                const fieldNames = group.fields === "all" ? Object.keys(data) : group.fields;
+                const fieldNames = group.fields === "all"
+                    ? fields.filter(f => keys.includes(f.name)).map(f => f.name) // return field names in order
+                    : group.fields;
+
                 const groupFields = fieldNames
                     .map(f => fields.find(field => field.name === f))
                     .filter(f => f !== undefined)
