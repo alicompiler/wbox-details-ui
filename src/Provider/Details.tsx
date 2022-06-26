@@ -5,8 +5,7 @@ import {State} from "../Data/State";
 import {useDefaults} from "../Defaults/DefaultsContext";
 import {Field} from "../Field/Field";
 
-export function Details(props: { renderOptions?: unknown }) {
-    const {renderOptions} = props;
+export function Details() {
     const state = useState<State>();
     const defaults = useDefaults();
     if (state.loading) {
@@ -31,7 +30,6 @@ export function Details(props: { renderOptions?: unknown }) {
                     .map(f => f as Field);
                 const GroupComponent = group.component ?? defaults.groupComponent;
                 return <GroupComponent key={group.name}
-                                       renderOptions={renderOptions}
                                        group={group}
                                        fields={groupFields}
                                        data={data}/>;

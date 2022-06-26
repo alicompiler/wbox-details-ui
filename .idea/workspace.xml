@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03b874b8-2e36-459a-849a-a69b1886c4cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Group/Group.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Group/Group.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Provider/Details.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/Details.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Provider/GroupComponentProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/GroupComponentProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Provider/Provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/Provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Provider/ProviderProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/ProviderProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Provider/Wrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Provider/Wrapper.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +78,7 @@
       <workItem from="1654361320847" duration="21195000" />
       <workItem from="1654947103876" duration="8798000" />
       <workItem from="1654974131362" duration="8624000" />
-      <workItem from="1655578579201" duration="2177000" />
+      <workItem from="1655578579201" duration="3945000" />
     </task>
     <servers />
   </component>
