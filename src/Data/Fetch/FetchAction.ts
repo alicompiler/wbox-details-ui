@@ -1,5 +1,5 @@
-import {Action} from 'wbox-context';
-import {DetailsData} from "../State";
+import {Action} from 'wb-core-provider';
+import {DetailsData} from '../State';
 
 export enum FetchActionType {
     SET_LOADING = 'FETCH_ACTION@SET_START',

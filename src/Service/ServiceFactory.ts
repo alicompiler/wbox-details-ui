@@ -1,11 +1,10 @@
-import {DispatchFunction} from 'wbox-context/dist/Context/DispatchContext';
+import {DispatchFunction} from 'wb-core-provider';
 import {BasicFetchOptions, BasicFetchService} from './Fetch/BasicFetchService';
 import {HttpFetchOptions, HttpFetchService} from './Fetch/HttpFetchService';
 import {State} from '../Data/State';
 import {FetchService} from './Fetch/FetchService';
-import {Defaults} from "../Defaults/DefaultsContext";
-// eslint-disable-next-line import/no-cycle
-import {ProviderProps} from "../Provider/ProviderProps";
+import {Defaults} from '../Defaults/DefaultsContext';
+import {ProviderProps} from '../Provider/ProviderProps';
 
 export interface ServiceFactory {
     createHttpFetchService(): FetchService;

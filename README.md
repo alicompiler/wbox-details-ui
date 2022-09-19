@@ -1,11 +1,4 @@
-# wbox-details-ui
+# wb-details
 
 
-
-TODO: 
-
-- data
-- fetch service
-- grouping
-- fields
-- 
+maybe extract wb-data-core, contains fetch service & actions & reducer & fields

@@ -1,8 +1,8 @@
-import {Reducer} from "wbox-context";
-import {State} from "../State";
-import {SetupAction, SetupActionType} from "./SetupAction";
-import {Field} from "../../Field/Field";
-import {Group} from "../../Group/Group";
+import {Reducer} from 'wb-core-provider';
+import {State} from '../State';
+import {SetupAction, SetupActionType} from './SetupAction';
+import {Field} from '../../Field/Field';
+import {Group} from '../../Group/Group';
 
 export const setupReducer: Reducer<State, SetupAction<unknown>> = (state, action) => {
     switch (action.type) {
@@ -13,4 +13,4 @@ export const setupReducer: Reducer<State, SetupAction<unknown>> = (state, action
         default:
             return state;
     }
-}
+};

@@ -1,7 +1,7 @@
-import React, {ReactNode, useContext} from "react";
-import {GroupComponentProps} from "../Provider/GroupComponentProps";
-// eslint-disable-next-line import/no-cycle
-import {Details} from "../Provider/Details";
+import React, {ReactElement, useContext} from 'react';
+import {GroupComponentProps} from '../Provider/GroupComponentProps';
+
+import {Details} from '../Provider/Details';
 
 export interface Defaults {
     httpFetcher: {
@@ -11,9 +11,9 @@ export interface Defaults {
         requestOptions: Partial<RequestInit>;
     };
     groupComponent: React.ComponentType<GroupComponentProps>
-    detailsWrapperComponent: React.ComponentType<{renderOptions?: unknown}>;
-    renderLoading: () => ReactNode;
-    renderError: () => any;
+    detailsWrapperComponent: React.ComponentType;
+    renderLoading: () => ReactElement;
+    renderError: () => ReactElement;
 }
 
 export const defaults: Defaults = {

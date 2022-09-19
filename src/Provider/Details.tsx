@@ -1,11 +1,10 @@
-import React from "react";
-import {useState} from "wbox-context";
-import {State} from "../Data/State";
-// eslint-disable-next-line import/no-cycle
-import {useDefaults} from "../Defaults/DefaultsContext";
-import {Field} from "../Field/Field";
+import React, {ReactElement} from 'react';
+import {useState} from 'wb-core-provider';
+import {State} from '../Data/State';
+import {useDefaults} from '../Defaults/DefaultsContext';
+import {Field} from '../Field/Field';
 
-export function Details() {
+export function Details(): ReactElement | null {
     const state = useState<State>();
     const defaults = useDefaults();
     if (state.loading) {
@@ -24,7 +23,7 @@ export function Details() {
     return <div className="__wbox_details_wrapper">
         {
             groups.map(group => {
-                const fieldNames = group.fields === "all"
+                const fieldNames = group.fields === 'all'
                     ? fields.filter(f => keys.includes(f.name)).map(f => f.name) // return field names in order
                     : group.fields;
 
@@ -39,5 +38,5 @@ export function Details() {
                                        data={data}/>;
             })
         }
-    </div>
+    </div>;
 }

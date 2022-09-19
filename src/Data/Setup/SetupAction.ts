@@ -1,10 +1,10 @@
-import {Action} from "wbox-context";
-import {Field} from "../../Field/Field";
-import {Group} from "../../Group/Group";
+import {Action} from 'wb-core-provider';
+import {Field} from '../../Field/Field';
+import {Group} from '../../Group/Group';
 
 export enum SetupActionType {
-    SET_FIELDS = "SETUP_ACTION@SET_FIELDS",
-    SET_GROUPS = "SETUP_ACTION@SET_GROUPS",
+    SET_FIELDS = 'SETUP_ACTION@SET_FIELDS',
+    SET_GROUPS = 'SETUP_ACTION@SET_GROUPS',
 }
 
 export type SetupAction<TPayload> = Action<SetupActionType, TPayload>;
@@ -22,6 +22,6 @@ export class SetupActions {
         return {
             type: SetupActionType.SET_GROUPS,
             payload: groups
-        }
+        };
     }
 }

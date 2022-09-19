@@ -1,5 +1,5 @@
-import React from "react";
-import {GroupComponentProps} from "../Provider/GroupComponentProps";
+import React from 'react';
+import {GroupComponentProps} from '../Provider/GroupComponentProps';
 
 export function BasicDetailsGroup({fields, data}: GroupComponentProps) {
     return <ul>
@@ -12,5 +12,5 @@ export function BasicDetailsGroup({fields, data}: GroupComponentProps) {
                 </li>
             )
         }
-    </ul>
+    </ul>;
 }

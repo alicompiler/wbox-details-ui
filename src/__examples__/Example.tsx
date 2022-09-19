@@ -1,7 +1,7 @@
-import React from "react";
-import {Provider} from "../Provider/Provider";
-import {defaultGroup} from "../Group/Group";
-import {BasicDetailsGroup} from "./BasicDetailsGroup";
+import React from 'react';
+import {Provider} from '../Provider/Provider';
+import {defaultGroup} from '../Group/Group';
+import {BasicDetailsGroup} from './BasicDetailsGroup';
 
 
 export function Example() {
@@ -12,5 +12,5 @@ export function Example() {
                          {name: 'test', title: 'NOT EXIST'},
                          {name: 'birthDate', title: 'BirthDate'},
                          {name: 'address', title: 'Address'}
-                     ]}/>
+                     ]}/>;
 }

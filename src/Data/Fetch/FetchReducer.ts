@@ -1,4 +1,4 @@
-import { Reducer } from 'wbox-context';
+import { Reducer } from 'wb-core-provider';
 import { FetchAction, FetchActionType } from './FetchAction';
 import {DetailsData, State} from '../State';
 

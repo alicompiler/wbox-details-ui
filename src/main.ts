@@ -1,18 +1,18 @@
-import {State,DetailsData} from "./Data/State";
-import {fetchReducer} from "./Data/Fetch/FetchReducer";
-import {FetchActions, FetchAction, FetchActionType} from "./Data/Fetch/FetchAction";
-import {SetupAction, SetupActions, SetupActionType} from "./Data/Setup/SetupAction";
-import {DefaultsContext, defaults, Defaults, DefaultsProvider, useDefaults} from "./Defaults/DefaultsContext";
-import {Field, transformFieldValue, getFieldValue} from "./Field/Field";
-import {Group} from "./Group/Group";
-import {Provider} from "./Provider/Provider";
-import {ProviderProps} from "./Provider/ProviderProps";
-import {ServiceFactory, DefaultServiceFactory} from "./Service/ServiceFactory";
-import {BasicFetchService, BasicFetchOptions} from "./Service/Fetch/BasicFetchService";
-import {HttpFetchService, HttpFetchOptions} from "./Service/Fetch/HttpFetchService";
-import {FetchOptions} from "./Service/Fetch/Types";
-import {Details} from "./Provider/Details";
-import {GroupComponentProps} from "./Provider/GroupComponentProps";
+import {State,DetailsData} from './Data/State';
+import {fetchReducer} from './Data/Fetch/FetchReducer';
+import {FetchActions, FetchAction, FetchActionType} from './Data/Fetch/FetchAction';
+import {SetupAction, SetupActions, SetupActionType} from './Data/Setup/SetupAction';
+import {DefaultsContext, defaults, Defaults, DefaultsProvider, useDefaults} from './Defaults/DefaultsContext';
+import {Field, transformFieldValue, getFieldValue} from './Field/Field';
+import {Group} from './Group/Group';
+import {Provider} from './Provider/Provider';
+import {ProviderProps} from './Provider/ProviderProps';
+import {ServiceFactory, DefaultServiceFactory} from './Service/ServiceFactory';
+import {BasicFetchService, BasicFetchOptions} from './Service/Fetch/BasicFetchService';
+import {HttpFetchService, HttpFetchOptions} from './Service/Fetch/HttpFetchService';
+import {FetchOptions} from './Service/Fetch/Types';
+import {Details} from './Provider/Details';
+import {GroupComponentProps} from './Provider/GroupComponentProps';
 
 export type {
     State,
@@ -30,7 +30,7 @@ export type {
     FetchOptions,
     DetailsData,
     GroupComponentProps
-}
+};
 
 export {
     Details,
@@ -47,4 +47,4 @@ export {
     DefaultServiceFactory,
     HttpFetchService,
     BasicFetchService
-}
+};

@@ -1,8 +1,6 @@
-// eslint-disable-next-line import/no-cycle
-import {Group} from "../Group/Group";
-// eslint-disable-next-line import/no-cycle
-import {DetailsData} from "../Data/State";
-import {Field} from "../Field/Field";
+import {Group} from '../Group/Group';
+import {DetailsData} from '../Data/State';
+import {Field} from '../Field/Field';
 
 export interface GroupComponentProps {
     group: Group;

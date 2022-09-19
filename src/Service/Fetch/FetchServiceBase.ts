@@ -1,7 +1,7 @@
-import {DispatchFunction} from 'wbox-context/dist/Context/DispatchContext';
+import {DispatchFunction} from 'wb-core-provider';
 import {FetchActions} from '../../Data/Fetch/FetchAction';
 import {FetchService} from './FetchService';
-import {DetailsData} from "../../Data/State";
+import {DetailsData} from '../../Data/State';
 
 export abstract class FetchServiceBase implements FetchService {
     private readonly dispatch: DispatchFunction;

@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-var-requires */
 const express = require("express");
 const cors = require("cors");
 
@@ -7,8 +5,6 @@ const app = express()
 
 app.use(cors());
 app.use(express.json())
-
-
 
 app.get('/data', (req, res) => {
     setTimeout(() => {
@@ -39,6 +35,5 @@ app.get('/data', (req, res) => {
 });
 
 app.listen(8080, () => {
-    // eslint-disable-next-line no-console
-    console.log('starting wbox-forms test server');
+    console.log('starting test server');
 });

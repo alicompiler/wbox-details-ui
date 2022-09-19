@@ -1,4 +1,4 @@
-import {DispatchFunction} from 'wbox-context';
+import {DispatchFunction} from 'wb-core-provider';
 import {FetchServiceBase} from './FetchServiceBase';
 
 export class BasicFetchService extends FetchServiceBase {

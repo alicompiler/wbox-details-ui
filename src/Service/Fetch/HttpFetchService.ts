@@ -1,4 +1,4 @@
-import {DispatchFunction} from 'wbox-context';
+import {DispatchFunction} from 'wb-core-provider';
 import {State} from '../../Data/State';
 import {Defaults} from '../../Defaults/DefaultsContext';
 import {FetchServiceBase} from './FetchServiceBase';

@@ -1,6 +1,5 @@
-import {Field} from "../Field/Field";
-// eslint-disable-next-line import/no-cycle
-import {Group} from "../Group/Group";
+import {Field} from '../Field/Field';
+import {Group} from '../Group/Group';
 
 export type DetailsData = { [key: string]: unknown }
 

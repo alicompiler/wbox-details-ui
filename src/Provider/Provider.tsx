@@ -1,15 +1,15 @@
 import React, {useCallback, useMemo} from 'react';
-import {CoreProvider, DispatchFunction} from 'wbox-context';
+import {CoreProvider, DispatchFunction} from 'wb-core-provider';
 import {DefaultServiceFactory} from '../Service/ServiceFactory';
-import {buildInitialState, State} from "../Data/State";
-import {useDefaults} from "../Defaults/DefaultsContext";
-import {Wrapper} from "./Wrapper";
-import {fetchReducer} from "../Data/Fetch/FetchReducer";
-import {ProviderProps} from "./ProviderProps";
-import {setupReducer} from "../Data/Setup/SetupReducer";
-import {defaultGroup} from "../Group/Group";
+import {buildInitialState, State} from '../Data/State';
+import {useDefaults} from '../Defaults/DefaultsContext';
+import {Wrapper} from './Wrapper';
+import {fetchReducer} from '../Data/Fetch/FetchReducer';
+import {ProviderProps} from './ProviderProps';
+import {setupReducer} from '../Data/Setup/SetupReducer';
+import {defaultGroup} from '../Group/Group';
 
-const baseReducers: any = [fetchReducer,setupReducer];
+const baseReducers = [fetchReducer,setupReducer];
 
 export function Provider(props: ProviderProps) {
     const {fetchOptions, reducers, serviceFactory, fields, groups} = props;
